@@ -1,0 +1,3 @@
+AmazonS3:
+  Disabled: false
+  Region: "us-west-2"

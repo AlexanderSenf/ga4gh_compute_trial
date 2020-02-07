@@ -1,0 +1,7 @@
+make depends
+make
+make lint
+make test
+make test-openstack
+make test-elasticsearch
+make test-kafka

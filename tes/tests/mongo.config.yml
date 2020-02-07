@@ -1,0 +1,8 @@
+Database: mongodb
+
+EventWriters:
+  - log
+
+MongoDB:
+  Addrs: 
+    - localhost:27000

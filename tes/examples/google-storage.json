@@ -1,0 +1,18 @@
+{
+  "name": "Google Cloud Storage example",
+  "description": "Task inputs and outputs can be Google Cloud Storage URLs.",
+  "executors": [
+    {
+      "image": "ubuntu",
+      "command": ["md5sum", "/tmp/file.zip"]
+    }
+  ],
+  "inputs": [
+    {
+      "name": "zipfile",
+      "description": "Download a public file from Google Storage (US Patent Office data)",
+      "url": "gs://uspto-pair/applications/05900016.zip",
+      "path": "/tmp/file.zip"
+    }
+  ]
+}
