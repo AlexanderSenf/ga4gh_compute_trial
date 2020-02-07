@@ -1,0 +1,5 @@
+GenericS3:
+  - Disabled: false
+    Endpoint: "localhost:18888"
+    Key: "accessKey1"
+    Secret: "verySecretKey1"
