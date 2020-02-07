@@ -1,0 +1,30 @@
+# General server settings
+server:
+    host: 0.0.0.0
+    port: 9101
+    debug: True
+
+# DRS service info settings
+service_info:
+    contact_info: 'https://github.com/elixir-europe/mock-DRS'
+    supported_file_system_protocols:
+        - http
+    version: ''
+
+# Location of OpenAPI specs
+openapi:
+    drs: 'mock_drs/specs/schema.data_repository_service.cd0186f.openapi.modified.yaml'
+    db_update : 'mock_drs/specs/schema.data_repository_service.update_db.openapi.yaml'
+
+# Database settings
+database:
+    host: 'mongo'
+    port: 27017
+    name: drs-db
+    objects:
+        - 'a001'
+        - 'a002'
+        - 'a004'
+        - 'a006'
+        - 'a008'
+        - 'a010'
