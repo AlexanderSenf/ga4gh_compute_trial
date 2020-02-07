@@ -1,0 +1,62 @@
+*.iml
+.idea
+*.class
+*.swp
+
+# Contains SQL statements to initialize testing DB with a confidential user and tokens
+# Contains SQL statements to initialize testing DB with a confidential user, assuming they followed the dockstore setup tutorial
+*.sql
+
+*.gradle
+gradle.properties
+AndroidManifest.xml
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# vscode
+.vscode
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+/target/
+dependency-reduced-pom.xml
+hello-world.yml
+dockstore-webservice/target/
+swagger-java-client/target/
+swagger-java-quay-client/target/
+swagger-java-sam-client/target/
+swagger-java-bitbucket-client/target/
+swagger-java-discourse-client/target/
+swagger-java-zenodo-client/target/
+dockstore-language-plugin-parent/target/
+openapi-java-client/target/
+dockstore-event-consumer/target/
+dockstore-webservice/nbactions.xml
+dockstore-common/target/
+dockstore-integration-testing/target/
+dockstore-integration-testing/cromwell-executions/
+dockstore-integration-testing/cromwell-input/
+dockstore-integration-testing/datastore/
+reports/target/
+
+# confidential testing files
+# The dockstore CLI config file for testing confidential data
+dockstore-integration-testing/src/test/resources/dstesting_pcks8.pem
+dockstore-integration-testing/src/test/resources/config_file.txt
+dockstore-integration-testing/src/test/resources/config_file2.txt
+dockstore-webservice/src/main/resources/migrations.test.confidential1.xml
+dockstore-webservice/src/main/resources/migrations.test.confidential2.xml
+dockstore-webservice/src/main/resources/migrations.test.confidential1_1.5.0.xml
+dockstore-webservice/src/main/resources/migrations.test.confidential2_1.5.0.xml
+
+# The dockstore.yml file for running the confidential tests
+dockstore-integration-testing/src/test/resources/dockstoreTest.yml
+
+# The tarball of the above three confidential files
+dockstore-integration-testing/src/test/resources/secrets.tar
