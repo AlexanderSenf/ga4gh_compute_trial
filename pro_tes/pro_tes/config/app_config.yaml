@@ -72,8 +72,9 @@ service_info:
 # TES services
 tes:
     service_list:
-        - 'https://csc-tesk.c03.k8s-popup.csc.fi/'
-        - 'https://csc-tesk.c03.k8s-popup.csc.fi/v1/'
-        - 'https://tes1.tsi.ebi.ac.uk/tes/v1/'
-        - 'https://tes.tsi.ebi.ac.uk/v1/'
-        - 'https://tes-dev.tsi.ebi.ac.uk/v1/'
+        - 'http://host.docker.internal:8000/'
+#        - 'https://csc-tesk.c03.k8s-popup.csc.fi/'
+#        - 'https://csc-tesk.c03.k8s-popup.csc.fi/v1/'
+#        - 'https://tes1.tsi.ebi.ac.uk/tes/v1/'
+#        - 'https://tes.tsi.ebi.ac.uk/v1/'
+#        - 'https://tes-dev.tsi.ebi.ac.uk/v1/'
