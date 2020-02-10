@@ -26,6 +26,8 @@ There are three scripts included to setup, start, and stop the deployment of the
 * `build.sh`
 
   This creates a virtualenv 'demo_platform', installes necessary projects, and builds any docker-compose projects. It also creates a /data directory at the same level as the github repository.
+  
+  (Ensure the correct minimum version of `docker-compose` https://github.com/docker/compose/releases)
 
 * `start.sh`
 
