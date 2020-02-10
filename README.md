@@ -46,4 +46,4 @@ There are three scripts included to setup, start, and stop the deployment of the
 - - DRS was approved as a standard just a few months ago; most reference implementations pre-date this, so they don’t support data access via DRS URI yet (in development, e.g. [TEStribute](https://github.com/elixir-europe/TEStribute) will make it into [proTES](https://github.com/elixir-europe/proTES)).
   - The standard WES implementation can be configured with cwltool, Arvados, Toil backends, but not yet with TES backend.
 
-The goal is to deploy a fully integarted set of services to demonstrate the GA4GH Cloud Compute APIs.
+The goal is to deploy a fully integrated set of services to demonstrate the GA4GH Cloud Compute APIs.
