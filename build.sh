@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Creating virtualenv"
-virtualenv -q -p python3 demo_platform
+python -m venv demo_platform
 source demo_platform/bin/activate
 echo "Installing Funnel (TES)"
 brew tap ohsu-comp-bio/formula
