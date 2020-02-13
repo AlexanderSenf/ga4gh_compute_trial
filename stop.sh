@@ -9,5 +9,6 @@ docker stop pro_tes_protes_1 || true && docker rm pro_tes_protes_1 || true
 docker stop pro_tes_mongodb_1 || true && docker rm pro_tes_mongodb_1 || true
 docker stop drs_mock-drs_1 || true && docker rm drs_mock-drs_1 || true
 docker stop drs_mongo_1 || true && docker rm drs_mongo_1 || true
-killall -9 funnel
+docker stop tes_1 || true && docker rm tes_1 || true
+#killall -9 funnel
 killall -9 wes

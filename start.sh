@@ -6,8 +6,11 @@ cd drs
 nohup docker-compose up -d &
 cd ..
 echo "Starting TES"
-killall -9 funnel
-nohup funnel server run &
+#killall -9 funnel
+#nohup funnel server run &
+cd tes
+nohup docker-compose up -d &
+cd ..
 echo "Starting TES Proxy"
 cd pro_tes
 export PROTES_DATA_DIR=../../data/pro_tes/

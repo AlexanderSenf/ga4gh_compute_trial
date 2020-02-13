@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+  tes-funnel:
+    image: tes:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    command: bash -c "go/bin/funnel server run"

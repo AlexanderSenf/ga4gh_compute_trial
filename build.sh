@@ -2,9 +2,13 @@
 echo "Creating virtualenv"
 python -m venv demo_platform
 source demo_platform/bin/activate
-echo "Installing Funnel (TES)"
-brew tap ohsu-comp-bio/formula
-brew install funnel
+#echo "Installing Funnel (TES)"
+#brew tap ohsu-comp-bio/formula
+#brew install funnel
+echo "Building TES"
+cd tes
+docker-compose build
+cd ..
 echo "Installing wes-service (WES)"
 pip install wes-service
 echo "Building DRS"
