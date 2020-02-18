@@ -32,12 +32,23 @@ def run_server():
     register_task_service(connexion_app.app)
 
     # Register OpenAPI specs
+    #connexion_app = register_openapi(
+    #    app=connexion_app,
+    #    specs=get_conf_type(config, 'api', 'specs', types=(list)),
+    #    spec_dir=get_conf(config, 'storage', 'spec_dir'),
+    #    add_security_definitions=True,
+    #)
     connexion_app = register_openapi(
         app=connexion_app,
         specs=get_conf_type(config, 'api', 'specs', types=(list)),
         spec_dir=get_conf(config, 'storage', 'spec_dir'),
-        add_security_definitions=True,
+        add_security_definitions=get_conf(
+            config,
+            'security',
+            'authorization_required'
+        )
     )
+
 
     # Enable cross-origin resource sharing
     enable_cors(connexion_app.app)
