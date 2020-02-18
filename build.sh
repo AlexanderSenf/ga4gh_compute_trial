@@ -25,3 +25,8 @@ cd pro_tes
 export PROTES_DATA_DIR=../../data/
 docker-compose build
 cd ..
+echo "Build WES Proxy"
+cd pro_wes
+export PROWES_DATA_DIR=../../data/
+docker-compose build
+cd ..

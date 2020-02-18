@@ -19,4 +19,11 @@ cd ..
 echo "Starting WES"
 killall -9 wes
 nohup wes-server &
+cd ..
 echo "Using https://dockstore.org/ for TRS"
+echo "Starting WES Proxy"
+cd pro_wes
+export PROWES_DATA_DIR=../../data/pro_wes/
+nohup docker-compose up -d &
+cd ..
+
