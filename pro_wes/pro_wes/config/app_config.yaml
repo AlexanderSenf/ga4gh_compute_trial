@@ -88,7 +88,8 @@ service_info:
 
 # TES server
 tes:
-    url: 'https://csc-tesk.c03.k8s-popup.csc.fi/'
+    url: 'http://host.docker.internal:7878/ga4gh/tes/'
+    #url: 'https://csc-tesk.c03.k8s-popup.csc.fi/'
     timeout: 5
     get_logs:
         url_root: 'v1/tasks/'
