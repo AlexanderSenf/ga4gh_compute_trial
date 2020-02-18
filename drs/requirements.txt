@@ -2,7 +2,7 @@ addict==2.2.0
 attrs==19.1.0
 certifi==2019.6.16
 chardet==3.0.4
-connexion==1.4.2
+connexion==2.6.0
 Flask==1.1.0
 Flask-Cors==3.0.8
 Flask-PyMongo==2.3.0
