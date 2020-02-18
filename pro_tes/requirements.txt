@@ -16,7 +16,7 @@ clickclick==1.2.2
 connexion==2.6.0
 cryptography==2.3.1
 decorator==4.3.0
-Flask==1.0.2
+Flask==1.0.4
 Flask-Cors==3.0.6
 Flask-PyMongo==2.1.0
 future==0.16.0
