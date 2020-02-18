@@ -22,10 +22,13 @@ ENV LOGNAME=ipython
 ENV USER=ipython
 
 # Install general dependencies
-RUN apt-get update && apt-get install -y nodejs openssl git build-essential python3-dev
+RUN apt-get update && apt-get install -y nodejs openssl git build-essential python3-dev git
 
 ## Set working directory
 WORKDIR /app
+
+## Clone cwl-tes
+RUN mkdir /app/src && cd /app/src && git clone https://github.com/ohsu-comp-bio/cwl-tes
 
 ## Copy Python requirements
 COPY ./requirements.txt /app/requirements.txt
